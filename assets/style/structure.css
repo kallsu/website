@@ -1,0 +1,43 @@
+/*
+ * Author : Giorgio Desideri
+ * Title : Main CSS Stylesheet
+ */
+ header {
+    display: inline-table;
+    width: 100%;
+    margin-top: .2em;
+    margin-bottom: .2em;
+    vertical-align: middle;
+    text-align: center;
+}
+
+header a {
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+    display: inline-table;
+    vertical-align: middle;
+    width: 100%;
+    margin-top: .3em;
+}
+
+#container {
+    width: 100%;
+    text-align: center;
+}
+
+#central_logo {
+    max-width: 100%;
+    height: auto;
+}
+
+#central_logo_text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

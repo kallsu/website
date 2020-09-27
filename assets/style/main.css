@@ -1,0 +1,47 @@
+/*
+ * Author : Giorgio Desideri
+ * Title : Main CSS Stylesheet
+ */
+
+html {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.3em;
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
