@@ -41,3 +41,26 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.post {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    vertical-align: top;
+}
+
+.post a {
+    color: azure;
+}
+
+.post_image {
+    width: 30%;
+    height: auto;
+}
+
+.post_text {
+    vertical-align: top;
+    text-align: left;
+    width: 70%;
+    height: auto;
+}
