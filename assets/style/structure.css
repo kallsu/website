@@ -15,6 +15,7 @@ header a {
     font-size: 1.4em;
     color: white;
     text-decoration: none;
+    padding-right: .5em;
 }
 
 nav {
@@ -23,6 +24,11 @@ nav {
     vertical-align: middle;
     width: 100%;
     margin-top: .3em;
+}
+
+nav a {
+    text-decoration: none;
+    padding-right: .5em;
 }
 
 #container {
@@ -42,6 +48,7 @@ nav {
     transform: translate(-50%, -50%);
 }
 
+/* ================= NEWS ==================== */
 .post {
     width: 100%;
     display: inline-flex;
@@ -58,9 +65,35 @@ nav {
     height: auto;
 }
 
+.post_image img {
+    width: 70%;
+    height: auto;
+}
+
 .post_text {
     vertical-align: top;
     text-align: left;
     width: 70%;
     height: auto;
+}
+
+/* ================= CONTACTS ==================== */
+.contacts {
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    vertical-align: top;
+}
+
+.contacts ul li {
+    vertical-align: top;
+    text-align: left;
+}
+
+.contacts h3 {
+    display: inline-flex;
+}
+
+.contacts a {
+    color: azure;
 }
