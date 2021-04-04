@@ -51,9 +51,12 @@ nav a {
 /* ================= NEWS ==================== */
 .post {
     width: 100%;
+    height: auto;
     display: inline-flex;
     flex-direction: row;
     vertical-align: top;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
 }
 
 .post a {
@@ -61,20 +64,21 @@ nav a {
 }
 
 .post_image {
-    width: 30%;
+    width: 50%;
     height: auto;
 }
 
 .post_image img {
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
 .post_text {
     vertical-align: top;
     text-align: left;
-    width: 60%;
+    width: 50%;
     height: auto;
+    padding-left: 10px;
 }
 
 /* ================= CONTACTS ==================== */
