@@ -59,6 +59,15 @@ nav a {
     margin-right: 0.4em;
 }
 
+@media (min-width: 321px) {
+    .post {
+        width: 100%;
+        height: auto;
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+    }
+}
+
 .post a {
     color: azure;
 }
@@ -100,4 +109,51 @@ nav a {
 
 .contacts a {
     color: azure;
+}
+
+/* ================= COURSE ==================== */
+.course {
+    width: 100%;
+    height: auto;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+
+.course_title {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+.course_description {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.course_section {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-direction: row;
+    vertical-align: top;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+
+.course_section a {
+    color: #be0300;
+}
+
+.course_section img {
+    width: 100%;
+    height: auto;
+}
+
+.course_box {
+    width: 25%;
+    height: auto;
+    padding: 0.5em;
 }
