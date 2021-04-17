@@ -52,20 +52,10 @@ nav a {
 .post {
     width: 100%;
     height: auto;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    vertical-align: top;
     margin-left: 0.4em;
     margin-right: 0.4em;
-}
-
-@media (min-width: 321px) {
-    .post {
-        width: 100%;
-        height: auto;
-        margin-left: 0.4em;
-        margin-right: 0.4em;
-    }
 }
 
 .post a {
@@ -83,11 +73,30 @@ nav a {
 }
 
 .post_text {
+    flex: 1;
     vertical-align: top;
     text-align: left;
     width: 50%;
     height: auto;
     padding-left: 10px;
+}
+
+@media (max-width: 950px) {
+    .post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .post_image {
+        width: 100%;
+    }
+
+    .post_text {
+        text-align: left;
+        width: 100%;
+    }
 }
 
 /* ================= CONTACTS ==================== */
@@ -136,9 +145,8 @@ nav a {
 .course_section {
     width: 100%;
     height: auto;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    vertical-align: top;
     margin-left: 0.4em;
     margin-right: 0.4em;
 }
@@ -153,7 +161,21 @@ nav a {
 }
 
 .course_box {
+    flex: 1;
     width: 25%;
     height: auto;
     padding: 0.5em;
+}
+
+@media (max-width: 950px) {
+    .course_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .course_box {
+        width: 100%;
+    }
 }

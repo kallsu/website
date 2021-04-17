@@ -51,12 +51,10 @@ html {
     
     hr {
         width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 }
 
-@media (min-width: 321px) {
+@media (min-width: 950px) {
     body {
         margin-top: 0.5em;
         margin-bottom: 0.5em;
@@ -90,11 +88,5 @@ html {
 
     p {
         font-size: 1.2em;
-    }
-
-    hr {
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 }
