@@ -12,7 +12,7 @@
 	<meta charset="UTF-8">
 
 	<meta name="description" content="Giorgio Desideri's personal website">
-	<meta name="keywords" content="Giorgio Desideri, Personal, Contacts, Events, News, Interest">
+	<meta name="keywords" content="Giorgio Desideri, Talks, Courses, Contacts">
 	<meta name="author" content="Giorgio Desideri" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index,follow,noarchive" />
@@ -42,11 +42,18 @@
 			'https://connect.facebook.net/en_US/fbevents.js');
 		fbq('init', '456878715683556');
 		fbq('track', 'PageView');
-		fbq('track', 'ViewContent');
+		fbq('track', 'ViewContent', 
+			{
+				content_name: "courses", 
+				content_type: "page", 
+				contents: ["courses", "page"]
+			});
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 			src="https://www.facebook.com/tr?id=456878715683556&ev=PageView&noscript=1" /></noscript>
 	<!-- End Facebook Pixel Code -->
+
+	<script type="text/javascript" src="/assets/script/fb_pixel_event.js"></script>
 </head>
 
 <body>
@@ -81,7 +88,11 @@
 
 			<div class="course_section">
 				<div class="course_box">
-					<a href="https://www.udemy.com/course/draft/3496088/?referralCode=B7658826178FCAB39521">
+					<a id="link_microservice_101_udemy" 
+						title="Microservice 101 Course - Udemy"
+						href="#"
+						onclick="LinkPageRedirect(this)">
+						
 						<img src="/assets/images/Microservice_101_Course_Udemy.jpg"
 							alt="Microservice 101 Course - Udemy">
 					</a>
@@ -90,7 +101,10 @@
 						Published on Udemy.
 						<br>
 						<br>
-						Click <a href="https://www.udemy.com/course/draft/3496088/?referralCode=B7658826178FCAB39521">here</a> 
+						Click <a id="link2_microservice_101_udemy" 
+							title="Microservice 101 Course - Udemy"
+							href="#"
+							onclick="LinkPageRedirect(this)">here</a> 
 						or on the image to access to the course.
 					</p>
 				</div>
@@ -139,7 +153,11 @@
 
 			<div class="course_section">
 				<div class="course_box">
-					<a href="https://www.udemy.com/course/gd-azure-function/?referralCode=1D8BF46C6D3F8EFE05AB">
+					<a id="link_azurefunction_udemy" 
+						title="Azure Function Course - Udemy"
+						href="#"
+						onclick="LinkPageRedirect(this)">
+					
 						<img src="/assets/images/Azure_Function_Udemy.jpg"
 							alt="Azure Function Course - Udemy">
 					</a>
@@ -152,7 +170,10 @@
 						<p>
 							A course to learn how to master and develop the Azure Functions.
 							<br>
-							Click <a href="https://www.udemy.com/course/gd-azure-function/?referralCode=1D8BF46C6D3F8EFE05AB">here</a> 
+							Click <a id="link2_azurefunction_udemy" 
+								title="Azure Function Course - Udemy"
+								href="#"
+								onclick="LinkPageRedirect(this)">here</a> 
 							or on the image to access to the course.
 						</p>
 					</p>
@@ -190,7 +211,7 @@
 		<hr>
 	</main>
 	<footer>
-	</footer>
+	</footer>	
 </body>
 
 </html>

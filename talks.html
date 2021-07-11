@@ -12,7 +12,7 @@
 	<meta charset="UTF-8">
 
 	<meta name="description" content="Giorgio Desideri's personal website">
-	<meta name="keywords" content="Giorgio Desideri, Personal, Contacts, Events, News, Interest">
+	<meta name="keywords" content="Giorgio Desideri, Talks, Courses, Contacts">
 	<meta name="author" content="Giorgio Desideri" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index,follow,noarchive" />
@@ -42,7 +42,12 @@
 			'https://connect.facebook.net/en_US/fbevents.js');
 		fbq('init', '456878715683556');
 		fbq('track', 'PageView');
-		fbq('track', 'ViewContent');
+		fbq('track', 'ViewContent', 
+			{
+				content_name: "talks", 
+				content_type: "page", 
+				contents: ["talks", "page"]
+			});
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 			src="https://www.facebook.com/tr?id=456878715683556&ev=PageView&noscript=1" /></noscript>
@@ -70,7 +75,7 @@
 		<hr>
 
 		<!-- .Net Meetup - 2021-06-28 -->
-		<section id="seven_peaks_speaks-2021-03-08" class="post">
+		<section id="dotnet_meetup_41_2021-06-28" class="post">
 
 			<div class="post_image">
 				<img src="https://secure-content.meetupstatic.com/images/https%3A%2F%2Fsecure.meetupstatic.com%2Fphotos%2Fevent%2F6%2F5%2F0%2F1%2Fhighres_496825857.jpeg/600x337.jpg" alt=".Net Meetup #41">
@@ -101,7 +106,7 @@
 		<hr>
 
 		<!-- Webinar - 2021-04-19 -->
-		<section id="seven_peaks_speaks-2021-03-08" class="post">
+		<section id="webinar_2021-04-19" class="post">
 
 			<div class="post_image">
 				<img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F131093059%2F161065419593%2F1%2Foriginal.20210403-153523?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=7c66be024632456f3dae70f37e449dad" alt="Giorgio Desideri's Webinar - How to use NoSQL with Azure CosmosDB">

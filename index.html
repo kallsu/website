@@ -12,7 +12,7 @@
 	<meta charset="UTF-8">
 
 	<meta name="description" content="Giorgio Desideri's personal website">
-	<meta name="keywords" content="Giorgio Desideri, Personal, Contacts, Events, News, Interest">
+	<meta name="keywords" content="Giorgio Desideri, Talks, Courses, Contacts">
 	<meta name="author" content="Giorgio Desideri" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index,follow,noarchive" />
@@ -42,7 +42,12 @@
 			'https://connect.facebook.net/en_US/fbevents.js');
 		fbq('init', '456878715683556');
 		fbq('track', 'PageView');
-		fbq('track', 'ViewContent');
+		fbq('track', 'ViewContent', 
+			{
+				content_name: "index", 
+				content_type: "page", 
+				contents: ["index", "page"]
+			});
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 			src="https://www.facebook.com/tr?id=456878715683556&ev=PageView&noscript=1" /></noscript>
