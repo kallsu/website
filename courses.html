@@ -5,6 +5,7 @@
 
 	<link rel="stylesheet" href="/assets/style/main.css">
 	<link rel="stylesheet" href="/assets/style/structure.css">
+	<link rel="stylesheet" href="/assets/style/structure_courses.css">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 	<meta charset="UTF-8">
 
 	<meta name="description" content="Giorgio Desideri's personal website">
-	<meta name="keywords" content="Giorgio Desideri, Talks, Courses, Contacts">
+	<meta name="keywords" content="Giorgio Desideri, courses, microservice, azure, aws">
 	<meta name="author" content="Giorgio Desideri" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index,follow,noarchive" />
@@ -42,10 +43,10 @@
 			'https://connect.facebook.net/en_US/fbevents.js');
 		fbq('init', '456878715683556');
 		fbq('track', 'PageView');
-		fbq('track', 'ViewContent', 
+		fbq('track', 'ViewContent',
 			{
-				content_name: "courses", 
-				content_type: "page", 
+				content_name: "courses",
+				content_type: "page",
 				contents: ["courses", "page"]
 			});
 	</script>
@@ -66,12 +67,18 @@
 	<nav>
 		<a href="https://www.facebook.com/giorgiodesideri.fb"><img src="/assets/images/facebook_logo_32.png"
 				alt="Giorgio Desideri's Facebook"></a>
-		<a href="https://www.instagram.com/giorgio.desideri.543"><img src="/assets/images/instagram_logo_32.png"
-				alt="Giorgio Desideri's Instagram"></a>
-		<a href="https://twitter.com/kallsu"><img src="/assets/images/twitter_logo_32.png"
-				alt="Giorgio Desideri's Twitter"></a>
-		<a href="https://th.linkedin.com/in/giorgio-desideri-176a5a7"><img src="/assets/images/linkedin_logo_32.png"
-				alt="Giorgio Desideri's Linkedin"></a>
+
+		<a href="https://www.instagram.com/giorgio.desideri.543">
+			<img src="/assets/images/instagram_logo_32.png" alt="Giorgio Desideri's Instagram">
+		</a>
+
+		<a href="https://twitter.com/kallsu">
+			<img src="/assets/images/twitter_logo_32.png" alt="Giorgio Desideri's Twitter">
+		</a>
+
+		<a href="https://th.linkedin.com/in/giorgio-desideri-176a5a7">
+			<img src="/assets/images/linkedin_logo_32.png" alt="Giorgio Desideri's Linkedin">
+		</a>
 	</nav>
 	<main id="container">
 
@@ -88,48 +95,50 @@
 
 			<div class="course_section">
 				<div class="course_box">
-					<a id="link_microservice_101_udemy" 
-						title="Microservice 101 Course - Udemy"
-						href="#"
-						onclick="LinkPageRedirect(this)">
-						
+					<a href="/courses/courses_microservices_01.html" title="Microservice 101 Course - Udemy">
+
 						<img src="/assets/images/Microservice_101_Course_Udemy.jpg"
 							alt="Microservice 101 Course - Udemy">
 					</a>
 
 					<p>
-						Published on Udemy.
-						<br>
-						<br>
-						Click <a id="link2_microservice_101_udemy" 
-							title="Microservice 101 Course - Udemy"
-							href="#"
-							onclick="LinkPageRedirect(this)">here</a> 
-						or on the image to access to the course.
+						<a href="/courses/courses_microservices_01.html" title="Microservice 101 Course - Udemy">
+							Check It !
+						</a>
 					</p>
 				</div>
 
 				<div class="course_box">
-					<img src="/assets/images/Microservice_101_Course_Beginner.jpg"
-						alt="Microservice 101 Course - Beginner Level">
+					<a href="/courses/courses_microservices_02.html" title="Microservice 101 Course - Beginner Level">
+						<img src="/assets/images/Microservice_101_Course_Beginner.jpg"
+							alt="Microservice 101 Course - Beginner Level">
+					</a>
 
 					<p>
-						<b>COMING SOON !</b>
+						<a href="/courses/courses_microservices_02.html"
+							title="Microservice 101 Course - Beginner Level">
+							Check It !
+						</a>
 					</p>
 				</div>
 
 				<div class="course_box">
-					<img src="/assets/images/Microservice_101_Course_Middle.jpg" 
-						alt="Microservice 101 Course - Practiced Level">
+					<a href="/courses/courses_microservices_03.html" title="Microservice 101 Course - Practiced Level"></a>
+						<img src="/assets/images/Microservice_101_Course_Middle.jpg"
+							alt="Microservice 101 Course - Practiced Level">
+					</a>
 
 					<p>
-						<b>COMING SOON !</b>
+						<a href="/courses/courses_microservices_03.html"
+							title="Microservice 101 Course - Practiced Level">
+							Check It !
+						</a>
 					</p>
 				</div>
 
 				<div class="course_box">
-					<img src="/assets/images/Microservice_101_Course_Expert.jpg" 
-					alt="Microservice 101 Course - Expert Level">
+					<img src="/assets/images/Microservice_101_Course_Expert.jpg"
+						alt="Microservice 101 Course - Expert Level">
 
 					<p>
 						<b>COMING SOON !</b>
@@ -148,40 +157,35 @@
 			</div>
 
 			<div class="course_description">
-				Learn from the most used architecture and suggestion of Microsoft about Serverless services and architectures.
+				Learn from the most used architecture and suggestion of Microsoft about Serverless services and
+				architectures.
 			</div>
 
 			<div class="course_section">
 				<div class="course_box">
-					<a id="link_azurefunction_udemy" 
-						title="Azure Function Course - Udemy"
-						href="#"
+					<a id="link_azurefunction_udemy" title="Azure Function Course - Udemy" href="#"
 						onclick="LinkPageRedirect(this)">
-					
-						<img src="/assets/images/Azure_Function_Udemy.jpg"
-							alt="Azure Function Course - Udemy">
+
+						<img src="/assets/images/Azure_Function_Udemy.jpg" alt="Azure Function Course - Udemy">
 					</a>
 
 					<p>
 						Published on Udemy.
 						<br>
 						<br>
-						
-						<p>
-							A course to learn how to master and develop the Azure Functions.
-							<br>
-							Click <a id="link2_azurefunction_udemy" 
-								title="Azure Function Course - Udemy"
-								href="#"
-								onclick="LinkPageRedirect(this)">here</a> 
-							or on the image to access to the course.
-						</p>
+
+					<p>
+						A course to learn how to master and develop the Azure Functions.
+						<br>
+						Click <a id="link2_azurefunction_udemy" title="Azure Function Course - Udemy" href="#"
+							onclick="LinkPageRedirect(this)">here</a>
+						or on the image to access to the course.
+					</p>
 					</p>
 				</div>
 
 				<div class="course_box">
-					<img src="/assets/images/Serverless_101_Beginner.png"
-						alt="Serverless 101 Course - Beginner Level">
+					<img src="/assets/images/Serverless_101_Beginner.png" alt="Serverless 101 Course - Beginner Level">
 
 					<p>
 						<b>COMING SOON !</b>
@@ -189,7 +193,7 @@
 				</div>
 
 				<div class="course_box">
-					<img src="/assets/images/Serverless_101_Practiced.png" 
+					<img src="/assets/images/Serverless_101_Practiced.png"
 						alt="Serverless 101 Course - Practiced Level">
 
 					<p>
@@ -198,8 +202,7 @@
 				</div>
 
 				<div class="course_box">
-					<img src="/assets/images/Serverless_101_Expert.png" 
-					alt="Serverless 101 Course - Expert Level">
+					<img src="/assets/images/Serverless_101_Expert.png" alt="Serverless 101 Course - Expert Level">
 
 					<p>
 						<b>COMING SOON !</b>
@@ -211,7 +214,7 @@
 		<hr>
 	</main>
 	<footer>
-	</footer>	
+	</footer>
 </body>
 
 </html>

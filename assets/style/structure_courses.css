@@ -1,0 +1,129 @@
+
+/* ================= COURSE ==================== */
+.course {
+    width: 100%;
+    height: auto;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+
+.course_title {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+.course_description {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.course_section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+
+.course_section a {
+    color: #be0300;
+}
+
+.course_section img {
+    width: 100%;
+    height: auto;
+}
+
+.course_box {
+    flex: 1;
+    width: 25%;
+    height: auto;
+    padding: 0.5em;
+}
+
+@media (max-width: 950px) {
+    .course_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .course_box {
+        width: 100%;
+    }
+}
+
+/* ================= COURSE ==================== */
+.page_course {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page_course_section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+
+@media (max-width: 950px) {
+    .page_course_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.page_course_title {
+    width: 100%;
+    text-align: center;
+}
+
+.page_course_image {
+    width: 100%;
+    vertical-align: top;
+}
+
+.page_course_description {
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 1em;
+}
+
+.page_course_description_sub_title {
+    font-size: 1.4em;
+    margin-block-start: 0em;
+    margin-block-end: .3em;
+}
+
+.page_course_description ul li {
+    padding-bottom: .4em;
+}
+
+.page_course_content {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.page_course_content_text {
+    font-size: 1em;
+}
+
+.page_course_content ul li{
+    padding-bottom: .4em;
+}
