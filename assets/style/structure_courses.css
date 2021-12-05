@@ -1,5 +1,23 @@
 
-/* ================= COURSE ==================== */
+/* ================= COURSES PAGE ==================== */
+.courses {
+    width: 100%;
+    height: auto;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+
+.courses_summary_description {
+    text-align: left;
+    margin-bottom: 0.3em;
+}
+
+.courses_toc {
+    text-align: left;
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
 .course {
     width: 100%;
     height: auto;
@@ -12,6 +30,7 @@
     text-align: center;
     margin-top: 0.3em;
     margin-bottom: 0.5em;
+    color: #be0300;
 }
 
 .course_description {
@@ -59,7 +78,7 @@
     }
 }
 
-/* ================= COURSE ==================== */
+/* ================= SPECIFIC COURSE PAGE ==================== */
 .page_course {
     width: 80%;
     height: auto;
@@ -88,6 +107,7 @@
 .page_course_title {
     width: 100%;
     text-align: center;
+    color: #be0300;   
 }
 
 .page_course_image {
@@ -106,6 +126,7 @@
     font-size: 1.4em;
     margin-block-start: 0em;
     margin-block-end: .3em;
+    color: #be0300;
 }
 
 .page_course_description ul li {
@@ -113,8 +134,9 @@
 }
 
 .page_course_content {
-    width: 80%;
+    width: 100%;
     height: auto;
+    margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
     text-align: left;

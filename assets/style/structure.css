@@ -31,9 +31,16 @@ nav a {
     padding-right: .5em;
 }
 
+/* ================= INDEX ==================== */
+
 #container {
     width: 100%;
     text-align: center;
+}
+
+.central {
+    margin-left: .5em;
+    margin-right: .5em;
 }
 
 #central_logo {
@@ -48,7 +55,7 @@ nav a {
     transform: translate(-50%, -50%);
 }
 
-/* ================= NEWS ==================== */
+/* ================= TALKS ==================== */
 .post {
     width: 100%;
     height: auto;
