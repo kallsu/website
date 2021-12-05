@@ -3,11 +3,11 @@
 <head>
 	<title>Giorgio Desideri's Website</title>
 
-	<link rel="stylesheet" href="/assets/style/main.css" type="text/css" >
-	<link rel="stylesheet" href="/assets/style/structure.css" type="text/css" >
+	<link rel="stylesheet" href="/assets/style/main.css" type="text/css">
+	<link rel="stylesheet" href="/assets/style/structure.css" type="text/css">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
 	<meta charset="UTF-8">
 
@@ -42,10 +42,10 @@
 			'https://connect.facebook.net/en_US/fbevents.js');
 		fbq('init', '456878715683556');
 		fbq('track', 'PageView');
-		fbq('track', 'ViewContent', 
+		fbq('track', 'ViewContent',
 			{
-				content_name: "contacts", 
-				content_type: "page", 
+				content_name: "contacts",
+				content_type: "page",
 				contents: ["contacts", "page"]
 			});
 	</script>
@@ -66,7 +66,7 @@
 				alt="Giorgio Desideri's Facebook"></a>
 		<a href="https://www.instagram.com/giorgio.desideri.543"><img src="/assets/images/instagram_logo_32.png"
 				alt="Giorgio Desideri's Instagram"></a>
-		
+
 		<a href="https://twitter.com/kallsu"><img src="/assets/images/twitter_logo_32.png"
 				alt="Giorgio Desideri's Twitter"></a>
 
@@ -100,7 +100,52 @@
 				</li>
 			</ul>
 		</section>
+		<!-- Messenger Chat plugin Code -->
+		<div id="fb-root"></div>
+
+		<!-- Your Chat plugin code -->
+		<div id="fb-customer-chat" class="fb-customerchat">
+		</div>
+
+		<script>
+			var chatbox = document.getElementById('fb-customer-chat');
+			chatbox.setAttribute("page_id", "103409738368186");
+			chatbox.setAttribute("attribution", "biz_inbox");
+
+			window.fbAsyncInit = function () {
+				FB.init({
+					xfbml: true,
+					version: 'v11.0'
+				});
+			};
+
+			(function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 	</main>
+
+	<footer style="text-align: center;">
+		Giorgio Desideri
+
+		<div style="margin-top: 1em;">
+			<a href="https://www.facebook.com/giorgiodesideri.fb"><img src="/assets/images/facebook_logo_32.png"
+					alt="Giorgio Desideri's Facebook"></a>
+
+			<a href="https://www.instagram.com/giorgio.desideri.543"><img src="/assets/images/instagram_logo_32.png"
+					alt="Giorgio Desideri's Instagram"></a>
+
+			<a href="https://twitter.com/kallsu"><img src="/assets/images/twitter_logo_32.png"
+					alt="Giorgio Desideri's Twitter"></a>
+
+			<a href="https://th.linkedin.com/in/giorgio-desideri-176a5a7"><img src="/assets/images/linkedin_logo_32.png"
+					alt="Giorgio Desideri's Linkedin"></a>
+		</div>
+	</footer>
 </body>
 
 </html>

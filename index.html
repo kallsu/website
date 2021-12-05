@@ -3,8 +3,8 @@
 <head>
 	<title>Giorgio Desideri's Website</title>
 
-	<link rel="stylesheet" href="/assets/style/main.css" type="text/css" >
-	<link rel="stylesheet" href="/assets/style/structure.css" type="text/css" >
+	<link rel="stylesheet" href="/assets/style/main.css" type="text/css">
+	<link rel="stylesheet" href="/assets/style/structure.css" type="text/css">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -64,10 +64,10 @@
 	<nav>
 		<a href="https://www.facebook.com/giorgiodesideri.fb"><img src="/assets/images/facebook_logo_32.png"
 				alt="Giorgio Desideri's Facebook"></a>
-		
+
 		<a href="https://www.instagram.com/giorgio.desideri.543"><img src="/assets/images/instagram_logo_32.png"
 				alt="Giorgio Desideri's Instagram"></a>
-		
+
 		<a href="https://twitter.com/kallsu"><img src="/assets/images/twitter_logo_32.png"
 				alt="Giorgio Desideri's Twitter"></a>
 
@@ -81,11 +81,35 @@
 		</section>
 
 		<section class="central">
-			WHAT I GIVE YOU
+			<div class="central_row">
+				<div class="central_box">
+					<h3>What I give you</h3>
 
-			WHERE YOU FIND ME
+					<p>
+						Teaching and coaching about 
+					</p>
+				</div>
 
-			HOW TO CONTACT ME
+				<div class="central_box">
+					<h3>Where you can find me</h3>
+
+					<p>
+						You can find me in the public and private events regarding the subjects expressed.
+						You can see my <a href="/talks.html">Talks</a> page to keep you updated about the next one.
+						If you want to invite me in a specific event, please don't hesitate and contact me.
+					</p>
+				</div>
+
+				<div class="central_box">
+					<h3>How to contact me</h3>
+
+					<p>
+						You can contact me by the social media listed <a href="contacts.html">here</a>.
+						You can send a message to ask information about courses, leave a feedback or give some suggestions.
+						You can do all the previous things using the integrated chat (Messenger) connected with the my account
+					</p>
+				</div>
+			</div>
 		</section>
 
 		<section class="central">
@@ -96,14 +120,42 @@
 
 			Mentoring
 		</section>
+
+		<!-- Messenger Chat plugin Code -->
+		<div id="fb-root"></div>
+
+		<!-- Your Chat plugin code -->
+		<div id="fb-customer-chat" class="fb-customerchat">
+		</div>
+
+		<script>
+			var chatbox = document.getElementById('fb-customer-chat');
+			chatbox.setAttribute("page_id", "103409738368186");
+			chatbox.setAttribute("attribution", "biz_inbox");
+
+			window.fbAsyncInit = function () {
+				FB.init({
+					xfbml: true,
+					version: 'v11.0'
+				});
+			};
+
+			(function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 	</main>
 
 	<footer style="text-align: center;">
 		Giorgio Desideri
 
-		<div style="margin-top: 1em;">	
+		<div style="margin-top: 1em;">
 			<a href="https://www.facebook.com/giorgiodesideri.fb"><img src="/assets/images/facebook_logo_32.png"
-				alt="Giorgio Desideri's Facebook"></a>
+					alt="Giorgio Desideri's Facebook"></a>
 
 			<a href="https://www.instagram.com/giorgio.desideri.543"><img src="/assets/images/instagram_logo_32.png"
 					alt="Giorgio Desideri's Instagram"></a>
