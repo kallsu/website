@@ -39,6 +39,8 @@ nav a {
 }
 
 .central {
+    margin-top: 2em;
+    margin-bottom: 5em;
     margin-left: .5em;
     margin-right: .5em;
 }
@@ -59,8 +61,15 @@ nav a {
     margin-right: .5em;
 }
 
-.central_box h3 {
+.central_box svg {
     text-align: center;
+    width: 15%;
+    height: auto;
+}
+
+.central_box h4 {
+    text-align: center;
+    font-size: 1.2em;
     color: #be0300;
 }
 
@@ -81,6 +90,7 @@ nav a {
         width: 100%;
     }
 }
+
 
 /* ================= TALKS ==================== */
 .post {
