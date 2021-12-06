@@ -7,7 +7,7 @@ function LinkPageRedirect(element) {
         fbq('track', 'ViewContent', 
 			{
 				content_name: "microservice_101_udemy", 
-				content_type: "link", 
+				content_type: "click_link", 
 				contents: ["microservice_101", "udemy", "link"]
 			});
 
