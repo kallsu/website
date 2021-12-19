@@ -34,8 +34,10 @@ nav a {
 /* ================= INDEX ==================== */
 
 #container {
-    width: 100%;
+    width: 80%;
     text-align: center;
+    margin-left: 10%;
+    margin-right: auto;
 }
 
 .central {
@@ -120,6 +122,13 @@ nav a {
 }
 
 @media (max-width: 950px) {
+    #container {
+        width: 100%;
+        text-align: center;
+        margin-left: 1%;
+        margin-right: auto;
+    }
+
     .central_row1 {
         display: flex;
         flex-direction: column;

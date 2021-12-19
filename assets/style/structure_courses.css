@@ -1,10 +1,7 @@
 
 /* ================= COURSES PAGE ==================== */
 .courses {
-    width: 100%;
     height: auto;
-    margin-left: 0.4em;
-    margin-right: 0.4em;
 }
 
 .courses_summary_description {
@@ -14,39 +11,26 @@
 
 .courses_toc {
     text-align: left;
-    font-size: 1.2em;
     margin-bottom: 0.3em;
 }
 
 .course {
-    width: 100%;
     height: auto;
-    margin-left: 0.4em;
-    margin-right: 0.4em;
 }
 
 .course_title {
-    width: 100%;
     text-align: center;
-    margin-top: 0.3em;
-    margin-bottom: 0.5em;
     color: #be0300;
 }
 
 .course_description {
-    width: 100%;
-    text-align: center;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    text-align: left;
 }
 
 .course_section {
-    width: 100%;
     height: auto;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    margin-left: 0.4em;
-    margin-right: 0.4em;
 }
 
 .course_section a {
