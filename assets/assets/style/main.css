@@ -1,0 +1,92 @@
+/*
+ * Author : Giorgio Desideri
+ * Title : Main CSS Stylesheet
+ */
+
+html {
+    font-family: 'Source Code Pro', monospace;
+    background-color: black;
+    color: white;
+}
+
+/*
+ * Responsive-ness block (mobile)
+ */ 
+@media (max-width: 320px) {
+
+    body {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+    
+    h2 {
+        font-size: 0.8em;
+    }
+    
+    h3 {
+        font-size: 0.7em;
+    }
+    
+    h4 {
+        font-size: 0.6em;
+    }
+    
+    h5 {
+        font-size: 0.5em;
+    }
+    
+    h6 {
+        font-size: 0.4em;
+    }
+    
+    p {
+        font-size: 0.2em;
+    }
+    
+    hr {
+        width: 100%;
+    }
+}
+
+@media (min-width: 950px) {
+    body {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.7em;
+    }
+
+    h4 {
+        font-size: 1.6em;
+    }
+
+    h5 {
+        font-size: 1.5em;
+    }
+
+    h6 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
