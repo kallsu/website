@@ -48,25 +48,61 @@ body {
 
 /* Home Section: Full Screen  */
 #home {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background-color: #222;
 }
 
 #home img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center; 
     display: block;
 }
 
-/* For mobile devices */
-@media (max-width: 768px) {
+/* --- Responsive Breakpoints --- */
+
+/* Tablets (Portrait) */
+@media (max-width: 1024px) {
     #home {
-        height: 45vh; 
+        height: 60vh; /* Shorter height for tablets */
+    }
+    .nav-container {
+        gap: 1.5rem;
     }
 }
+
+/* Mobile Phones (Large & Small) */
+@media (max-width: 768px) {
+    #home {
+        height: 50vh; /* Standard mobile height */
+    }
+    
+    /* Ensure grid items take up more space on small screens */
+    .activities-grid {
+        grid-template-columns: 1fr; /* Stack items vertically on mobile */
+    }
+
+    .nav-container {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem; /* Scale down text to avoid overlapping */
+    }
+}
+
+/* Landscape Mode for Phones */
+@media (max-height: 500px) and (orientation: landscape) {
+    #home {
+        height: 100vh; /* On landscape phones, 100vh actually looks good */
+    }
+}
+
 
 .hero-text {
     position: absolute;
