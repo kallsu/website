@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FHSV9ZHM1W"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-FHSV9ZHM1W');
+	</script>
+
+	<title>Giorgio Desideri's Website</title>
+
+	<link rel="stylesheet" href="/assets/styles/main-03.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+	<meta charset="UTF-8">
+
+	<meta name="description" content="Giorgio Desideri's personal website">
+	<meta name="keywords" content="Giorgio Desideri, index, courses">
+	<meta name="author" content="Giorgio Desideri" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index,follow,noarchive" />
+
+    <!-- Facebook Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '456878715683556');
+		fbq('track', 'PageView');
+		fbq('track', 'ViewContent',
+			{
+				content_name: "contacts",
+				content_type: "page",
+				contents: ["contacts", "page"]
+			});
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=456878715683556&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
 </head>
 <body>
 
@@ -18,30 +64,31 @@
     
     <main>
         <section id="home" class="full-screen">
-            <img src="YOUR_IMAGE_URL_HERE" alt="Hero Image">
-            <div class="hero-text">
-                <h1>Welcome</h1>
-            </div>
+            <img src="/assets/images/hero_image_01.jpg" alt="Hero Image">
         </section>
 
         <section id="activities" class="container">
             <h2>Activities</h2>
             <div class="activities-grid">
                 <div class="activity-item">
-                    <h4>Advanced Web Design</h4>
-                    <p>Course - 2024</p>
-                </div>
-                <div class="activity-item">
                     <h4>AI in Modern UI</h4>
                     <p>Talk - TechConf 2025</p>
                 </div>
                 <div class="activity-item">
-                    <h4>JavaScript Patterns</h4>
-                    <p>Course - 2023</p>
+                    <h4>VibeCoding with AI</h4>
+                    <p>Coming soon</p>
                 </div>
                 <div class="activity-item">
-                    <h4>Future of CSS</h4>
-                    <p>Talk - Dev Summit</p>
+                    <h4>My RAG application 101</h4>
+                    <p>
+                        <a href="https://www.facebook.com/events/1003295175784914/">Workshop</a>
+                    </p>
+                </div>
+                <div class="activity-item">
+                    <h4>.NET Application Development 101</h4>
+                    <p>
+                        <a href="https://www.facebook.com/events/1950040009193095">Workshop</a>
+                    </p>
                 </div>
             </div>
         </section>
@@ -49,9 +96,11 @@
         <section id="contacts" class="container">
             <h3>Contacts</h3>
             <ul class="contact-list">
-                <li><a href="https://facebook.com">Facebook</a></li>
-                <li><a href="https://linkedin.com">LinkedIn</a></li>
-                <li><a href="https://github.com">GitHub</a></li>
+                <li><a href="https://www.facebook.com/giorgiodesideri.fb">Facebook</a></li>
+                <li><a href="https://www.instagram.com/giorgio.desideri.543">Instagram</a></li>
+                <li><a href="https://th.linkedin.com/in/giorgio-desideri-176a5a7">LinkedIn</a></li>
+                <li><a href="https://github.com/kallsu">GitHub</a></li>
+                <li><a href="https://twitter.com/kallsu">X</a></li>
             </ul>
         </section>
     </main>
