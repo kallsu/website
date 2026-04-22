@@ -1,7 +1,7 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FHSV9ZHM1W"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -13,23 +13,32 @@
 
 	<title>Giorgio Desideri's Website</title>
 
-	<link rel="stylesheet" href="/assets/style/main.css" type="text/css">
-	<link rel="stylesheet" href="/assets/style/structure.css" type="text/css">
+    <!-- Style-->
+	<link rel="stylesheet" href="/assets/styles/main-03.css" type="text/css">
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Icons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
+    <!-- Yes, this website is UTF-8 -->
 	<meta charset="UTF-8">
 
+    <!-- Metadata -->
 	<meta name="description" content="Giorgio Desideri's personal website">
-	<meta name="keywords" content="Giorgio Desideri, index, talks, courses">
+	<meta name="keywords" content="Giorgio Desideri, index, courses">
 	<meta name="author" content="Giorgio Desideri" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index,follow,noarchive" />
 
-	<!-- Facebook Pixel Code -->
+    <!-- Facebook Pixel Code -->
 	<script>
 		!function (f, b, e, v, n, t, s) {
 			if (f.fbq) return; n = f.fbq = function () {
@@ -46,165 +55,71 @@
 		fbq('track', 'PageView');
 		fbq('track', 'ViewContent',
 			{
-				content_name: "index",
+				content_name: "contacts",
 				content_type: "page",
-				contents: ["index", "page"]
+				contents: ["contacts", "page"]
 			});
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 			src="https://www.facebook.com/tr?id=456878715683556&ev=PageView&noscript=1" /></noscript>
 	<!-- End Facebook Pixel Code -->
 </head>
-
 <body>
-	<header>
-		<a href="/"><u>Home</u></a>
-		<a href="/courses.html">Courses</a>
-		<a href="/contacts.html">Contacts</a>
-	</header>
-	<nav>
-		<a href="https://www.facebook.com/giorgiodesideri.fb"><img src="/assets/images/facebook_logo_32.png"
-				alt="Giorgio Desideri's Facebook"></a>
 
-		<a href="https://www.instagram.com/giorgio.desideri.543"><img src="/assets/images/instagram_logo_32.png"
-				alt="Giorgio Desideri's Instagram"></a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home">Home</a>
+            <a href="#activities">Activities</a>
+            <a href="#contacts">Contacts</a>
+        </div>
+    </nav>
+    
+    <main>
+        <section id="home" class="full-screen">
+            <img src="/assets/images/hero_image_01.jpg" alt="Hero Image">
+        </section>
 
-		<a href="https://twitter.com/kallsu"><img src="/assets/images/twitter_logo_32.png"
-				alt="Giorgio Desideri's Twitter"></a>
+        <section id="activities" class="container">
+            <h2>Activities</h2>
+            <div class="activities-grid">
+                <div class="activity-item">
+                    <h4></h4>
+                    <p>Coming soon</p>
+                </div>
+                <div class="activity-item">
+                    <h4>VibeCoding with AI</h4>
+                    <p>MasterClass</p>
+                </div>
+                <div class="activity-item">
+                    <h4>My RAG application 101</h4>
+                    <p>
+                        <a href="https://www.facebook.com/events/1003295175784914/">Workshop</a>
+                    </p>
+                </div>
+                <div class="activity-item">
+                    <h4>.NET Application Development 101</h4>
+                    <p>
+                        <a href="https://www.facebook.com/events/1950040009193095">Workshop</a>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-		<a href="https://th.linkedin.com/in/giorgio-desideri-176a5a7"><img src="/assets/images/linkedin_logo_32.png"
-				alt="Giorgio Desideri's Linkedin"></a>
-	</nav>
+        <section id="contacts" class="container">
+            <h3>Contacts</h3>
+            <ul class="contact-list">
+                <li><a href="https://www.facebook.com/giorgiodesideri.fb">Facebook</a></li>
+                <li><a href="https://www.instagram.com/giorgio.desideri.543">Instagram</a></li>
+                <li><a href="https://th.linkedin.com/in/giorgio-desideri-176a5a7">LinkedIn</a></li>
+                <li><a href="https://github.com/kallsu">GitHub</a></li>
+                <li><a href="https://twitter.com/kallsu">X</a></li>
+            </ul>
+        </section>
+    </main>
 
-	<main id="container">
+    <footer>
+        <p>&copy; 2026 Personal Brand</p>
+    </footer>
 
-		<section class="central">
-			<div class="central_row1">
-				<img src="/assets/images/869188faf4bcde53f9bedc7cde5bd6aabd65432d.jpg" alt="Giorgio Desideri">
-
-				<div class="central_row1_box">
-					<h1>Giorgio Desideri</h1>
-
-					<p>
-						Teaching and Coaching about Software Development and Cloud Technologies.
-						<br>
-						<br>
-
-						<i>
-							"When you think that you reach a comfortable point,
-							then it is the moment that you discover that you are just starting to learn"
-						</i>
-						<br>
-					</p>
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="central">
-			<div class="central_row2">
-				<div class="central_box">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16"
-						alt="What I give you">
-						<path
-							d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
-					</svg>
-
-					<h4>What I give you</h4>
-
-					<p>
-						Teaching about cloud services ( AWS and Azure ), and programming technologies.
-						Coaching about your method or approach of development giving you strategies and possible
-						methodologies tailored for you.
-					</p>
-				</div>
-
-				<div class="central_box">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pin-map"
-						viewBox="0 0 16 16" alt="Where you can find me">
-
-						<path fill-rule="evenodd"
-							d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
-						<path fill-rule="evenodd"
-							d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
-					</svg>
-
-					<h4>Where you can find me</h4>
-
-					<p>
-						You can find me in the public and private events regarding the subjects expressed.
-						You can see my <a href="/talks.html">Talks</a> page to keep you updated about the next one.
-						If you want to invite me in a specific event, please don't hesitate and contact me.
-					</p>
-				</div>
-
-				<div class="central_box">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-mailbox"
-						viewBox="0 0 16 16" alt="How-To contact me">
-						<path
-							d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z" />
-						<path
-							d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z" />
-					</svg>
-
-					<h4>How-To contact me</h4>
-
-					<p>
-						You can contact me by the social media listed <a href="contacts.html">here</a>.
-						You can send a message to ask information about courses, leave a feedback or give some
-						suggestions.
-						You can use also the integrated chat (Messenger) to contact me
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<!-- Messenger Chat plugin Code -->
-		<div id="fb-root"></div>
-
-		<!-- Your Chat plugin code -->
-		<div id="fb-customer-chat" class="fb-customerchat">
-		</div>
-
-		<script>
-			var chatbox = document.getElementById('fb-customer-chat');
-			chatbox.setAttribute("page_id", "103409738368186");
-			chatbox.setAttribute("attribution", "biz_inbox");
-
-			window.fbAsyncInit = function () {
-				FB.init({
-					xfbml: true,
-					version: 'v11.0'
-				});
-			};
-
-			(function (d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>
-	</main>
-
-	<footer style="text-align: center;">
-		Giorgio Desideri
-
-		<div style="margin-top: 1em;">
-			<a href="https://www.facebook.com/giorgiodesideri.fb"><img src="/assets/images/facebook_logo_32.png"
-					alt="Giorgio Desideri's Facebook"></a>
-
-			<a href="https://www.instagram.com/giorgio.desideri.543"><img src="/assets/images/instagram_logo_32.png"
-					alt="Giorgio Desideri's Instagram"></a>
-
-			<a href="https://twitter.com/kallsu"><img src="/assets/images/twitter_logo_32.png"
-					alt="Giorgio Desideri's Twitter"></a>
-
-			<a href="https://th.linkedin.com/in/giorgio-desideri-176a5a7"><img src="/assets/images/linkedin_logo_32.png"
-					alt="Giorgio Desideri's Linkedin"></a>
-		</div>
-	</footer>
 </body>
-
 </html>
