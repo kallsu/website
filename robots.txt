@@ -1,0 +1,10 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow crawling of the assets folder to save crawl budget
+Disallow: /assets/favicon/
+Disallow: /assets/styles/
+
+# Path to your sitemap
+Sitemap: https://giorgiodesideri.com/sitemap.xml
