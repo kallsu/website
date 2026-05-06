@@ -1,15 +1,14 @@
 /* General Reset */
 :root {
-    --bg: #f5f1ea;
-    --surface: #fffaf4;
+    --bg: #ffffff;
     --surface-strong: #ffffff;
-    --text: #1d2430;
-    --muted: #5b6573;
-    --accent: #0d5d56;
-    --accent-strong: #0a4641;
-    --accent-soft: #d5ebe7;
-    --border: rgba(29, 36, 48, 0.12);
-    --shadow: 0 18px 50px rgba(29, 36, 48, 0.12);
+    --text: #000000;
+    --muted: #000000;
+    --accent: #06026e;
+    --accent-strong: #06026e;
+    --accent-soft: #be0300;
+    --border: #06026e;
+    --shadow: none;
 }
 
 * {
@@ -26,10 +25,7 @@ html {
 body {
     line-height: 1.6;
     color: var(--text);
-    background:
-        radial-gradient(circle at top left, rgba(13, 93, 86, 0.16), transparent 30%),
-        radial-gradient(circle at top right, rgba(186, 148, 114, 0.16), transparent 28%),
-        var(--bg);
+    background: var(--bg);
     font-family: "Lexend", system-ui, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -50,11 +46,10 @@ a {
     position: sticky;
     top: 0;
     width: 100%;
-    background: rgba(255, 250, 244, 0.88);
-    backdrop-filter: blur(14px);
+    background: var(--accent);
     padding: 1rem 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(29, 36, 48, 0.08);
+    border-bottom: 4px solid var(--accent-soft);
 }
 
 .nav-container {
@@ -70,7 +65,7 @@ a {
 
 .navbar a {
     text-decoration: none;
-    color: var(--text);
+    color: #ffffff;
     font-weight: 700;
     letter-spacing: 0.01em;
     transition: color 0.2s ease, transform 0.2s ease;
@@ -78,14 +73,13 @@ a {
 
 .navbar a:hover,
 .navbar a:focus-visible {
-    color: var(--accent);
-    transform: translateY(-1px);
+    color: var(--accent-soft);
 }
 
 .navbar a:focus-visible,
 .button-link:focus-visible,
 .contact-list a:focus-visible {
-    outline: 3px solid rgba(13, 93, 86, 0.28);
+    outline: 3px solid var(--accent-soft);
     outline-offset: 3px;
 }
 
@@ -117,7 +111,7 @@ h4 {
     min-height: 92vh;
     position: relative;
     overflow: hidden;
-    background-color: #222;
+    background-color: #000000;
 }
 
 #home img {
@@ -133,9 +127,9 @@ h4 {
     transform: translateX(-50%);
     width: min(92vw, 980px);
     padding: 1.25rem 1.5rem;
-    color: white;
-    background: linear-gradient(135deg, rgba(9, 16, 24, 0.7), rgba(9, 16, 24, 0.2));
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    background: var(--accent);
+    border: 4px solid var(--accent-soft);
     border-radius: 1.25rem;
     text-align: center;
     box-shadow: var(--shadow);
@@ -149,7 +143,7 @@ h4 {
 .hero-text p {
     max-width: 62ch;
     margin: 0 auto;
-    color: rgba(255, 255, 255, 0.9);
+    color: #ffffff;
 }
 
 .activities-grid {
@@ -163,7 +157,7 @@ h4 {
 .value-card,
 .info-panel {
     background: var(--surface-strong);
-    border: 1px solid var(--border);
+    border: 3px solid var(--border);
     border-radius: 1.2rem;
     box-shadow: var(--shadow);
 }
@@ -174,8 +168,7 @@ h4 {
 }
 
 .activity-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 22px 55px rgba(29, 36, 48, 0.15);
+    transform: translateY(-2px);
 }
 
 #activities h2,
@@ -185,14 +178,22 @@ h4 {
     gap: 0.5rem;
     margin-bottom: 1.25rem;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid var(--accent);
+    border-bottom: 4px solid var(--accent-soft);
 }
 
 .contact-list {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem 1.25rem;
+    flex-wrap: nowrap;
+    gap: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.contact-list li + li::before {
+    content: " / ";
+    color: var(--accent-soft);
+    font-weight: 700;
 }
 
 .contact-list a {
@@ -215,9 +216,7 @@ h4 {
     content: "";
     position: absolute;
     inset: 0;
-    background:
-        radial-gradient(circle at 10% 15%, rgba(13, 93, 86, 0.18), transparent 24%),
-        radial-gradient(circle at 90% 0%, rgba(186, 148, 114, 0.18), transparent 22%);
+    background: linear-gradient(135deg, var(--accent), var(--accent-soft));
     pointer-events: none;
 }
 
@@ -236,8 +235,8 @@ h4 {
     margin-bottom: 1rem;
     padding: 0.45rem 0.8rem;
     border-radius: 999px;
-    background: rgba(13, 93, 86, 0.1);
-    color: var(--accent-strong);
+    background: var(--accent-soft);
+    color: #ffffff;
     font-size: 0.92rem;
     font-weight: 700;
 }
@@ -250,7 +249,7 @@ h4 {
 
 .page-hero p {
     font-size: 1.04rem;
-    color: var(--muted);
+    color: var(--text);
     max-width: 66ch;
 }
 
@@ -261,7 +260,7 @@ h4 {
 
 .info-panel {
     padding: 1.25rem;
-    background: linear-gradient(180deg, rgba(255, 250, 244, 0.9), rgba(255, 255, 255, 0.98));
+    background: #ffffff;
 }
 
 .info-panel h2,
@@ -279,7 +278,7 @@ h4 {
 .course-meta,
 .free-paid,
 .course-card li {
-    color: var(--muted);
+    color: var(--text);
 }
 
 .badge-row {
@@ -296,7 +295,7 @@ h4 {
     padding: 0.3rem 0.8rem;
     border-radius: 999px;
     background: var(--accent-soft);
-    color: var(--accent-strong);
+    color: #ffffff;
     font-weight: 700;
     font-size: 0.92rem;
 }
@@ -328,11 +327,9 @@ h4 {
     padding: 1.25rem;
     display: flex;
     align-items: flex-end;
-    color: #fff;
-    background:
-        linear-gradient(135deg, rgba(8, 18, 28, 0.1), rgba(8, 18, 28, 0.45)),
-        linear-gradient(135deg, #0d5d56, #1f8d88 58%, #b78f68);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+    border-bottom: 3px solid var(--border);
 }
 
 .course-art::before,
@@ -340,7 +337,7 @@ h4 {
     content: "";
     position: absolute;
     border-radius: 999px;
-    opacity: 0.22;
+    opacity: 1;
 }
 
 .course-art::before {
@@ -348,7 +345,7 @@ h4 {
     height: 140px;
     right: -28px;
     top: -28px;
-    background: #fff;
+    background: #ffffff;
 }
 
 .course-art::after {
@@ -356,7 +353,7 @@ h4 {
     height: 96px;
     right: 92px;
     bottom: 18px;
-    background: #f8f2ea;
+    background: #be0300;
 }
 
 .course-art span {
@@ -368,8 +365,9 @@ h4 {
     min-width: 6rem;
     padding: 0.45rem 0.75rem;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.16);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
     font-weight: 700;
 }
 
@@ -396,8 +394,8 @@ h4 {
 .version-list li {
     padding: 0.85rem 0.95rem;
     border-radius: 0.95rem;
-    background: rgba(13, 93, 86, 0.05);
-    border: 1px solid rgba(13, 93, 86, 0.12);
+    background: #ffffff;
+    border: 2px solid var(--accent);
 }
 
 .version-list strong {
@@ -414,7 +412,7 @@ h4 {
 
 .value-card {
     padding: 1.25rem;
-    background: linear-gradient(180deg, rgba(255, 250, 244, 0.95), #ffffff);
+    background: #ffffff;
 }
 
 .value-card h3 {
@@ -433,13 +431,14 @@ h4 {
     align-items: center;
     padding: 1.5rem;
     border-radius: 1.4rem;
-    background: linear-gradient(135deg, var(--accent-strong), #0b7370);
-    color: #fff;
+    background: var(--accent);
+    color: #ffffff;
     box-shadow: var(--shadow);
+    border: 4px solid var(--accent-soft);
 }
 
 .cta-band p {
-    color: rgba(255, 255, 255, 0.88);
+    color: #ffffff;
 }
 
 .button-link {
@@ -449,24 +448,25 @@ h4 {
     min-height: 3rem;
     padding: 0.8rem 1.25rem;
     border-radius: 999px;
-    background: #fff;
-    color: var(--accent-strong);
+    background: #ffffff;
+    color: var(--accent);
     text-decoration: none;
     font-weight: 800;
     letter-spacing: 0.01em;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 3px solid #000000;
 }
 
 .button-link:hover {
     transform: translateY(-1px);
-    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.16);
 }
 
 footer {
     text-align: center;
     padding: 2rem 1rem;
-    background: rgba(29, 36, 48, 0.94);
-    color: white;
+    background: var(--accent);
+    color: #ffffff;
+    border-top: 4px solid var(--accent-soft);
 }
 
 /* Responsive Breakpoints */
