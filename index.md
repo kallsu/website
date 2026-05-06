@@ -7,7 +7,7 @@ Personal website and portfolio of Giorgio Desideri.
 - **VibeCoding with AI**: MasterClass
 - **My RAG application 101**: [Workshop](https://www.facebook.com/events/1003295175784914/)
 - **.NET Application Development 101**: [Workshop](https://www.facebook.com/events/1950040009193095)
-- **Upcoming Project**: Coming soon
+- **Upcoming Project**: [View the full courses catalogue](/courses.html)
 
 ## Contacts
 
