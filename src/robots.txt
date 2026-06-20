@@ -1,0 +1,18 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /courses.html
+
+# Declare AI Content Preferences (Content Signals)
+# ai-train: no (Prevents usage for training future models)
+# search: yes (Allows usage for AI-powered search results/summaries)
+# ai-input: no (Prevents usage as a direct input for generative prompts)
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+# Disallow crawling of specific technical folders
+Disallow: /assets/favicon/
+Disallow: /assets/styles/
+
+# Path to your sitemap
+Sitemap: https://giorgiodesideri.com/sitemap.xml
