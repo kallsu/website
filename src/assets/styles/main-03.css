@@ -183,15 +183,13 @@ h4 {
 
 .contact-list {
     list-style: none;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 0;
+    display: block;
     overflow-x: auto;
     white-space: nowrap;
 }
 
 .contact-list li + li::before {
-    content: " / ";
+    content: " * ";
     color: var(--accent-soft);
     font-weight: 700;
 }
