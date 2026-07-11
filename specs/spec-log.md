@@ -18,3 +18,8 @@
 2. Update `src/index.html` to add the `MCT Programme` navbar entry pointing to `src/mct-programme.html`.
 3. Update `src/index.md` so it reflects the new navigation entry.
 4. Review the changed files for consistency with the repo rules.
+
+# Plan
+
+1. Create `specs/SPEC-MCT-Programme-Landing-20260711.md` from `mct-cts-landing-page.md` with the updated hero, pricing, schedule, trust, and CTA requirements.
+2. Pause before changing `src/mct-programme.html` until the spec is approved or revised.
