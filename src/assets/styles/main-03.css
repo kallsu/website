@@ -220,10 +220,6 @@ h4 {
 
 .page-hero-inner {
     position: relative;
-    display: grid;
-    grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
-    gap: 1.5rem;
-    align-items: center;
 }
 
 .eyebrow {
@@ -242,13 +238,11 @@ h4 {
 .page-hero h1 {
     font-size: clamp(2.3rem, 5vw, 4.7rem);
     margin-bottom: 1rem;
-    max-width: 11ch;
 }
 
 .page-hero p {
     font-size: 1.04rem;
     color: var(--text);
-    max-width: 66ch;
 }
 
 .hero-stack {

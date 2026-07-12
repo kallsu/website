@@ -23,3 +23,10 @@
 
 1. Create `specs/SPEC-MCT-Programme-Landing-20260711.md` from `mct-cts-landing-page.md` with the updated hero, pricing, schedule, trust, and CTA requirements.
 2. Pause before changing `src/mct-programme.html` until the spec is approved or revised.
+
+# Plan
+
+1. Update `src/mct-programme.html` SEO metadata so the title, description, canonical, and Open Graph text describe the page as a subscription-based MCT Programme built around the listed courses, without any July-October timing language.
+2. Remove the `Schedule` and `Weekend course sequence` sections, then rebalance the remaining content so the page still explains the programme, its course list, and its conversion path clearly.
+3. Refresh the hero, supporting copy, and CTA language to position the MCT Programme as a subscription based on the courses listed, while keeping the page focused on registration and related course discovery.
+4. Review the finished HTML for one `h1`, semantic structure, internal links, and clean SEO references before considering the task complete.
