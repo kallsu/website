@@ -26,32 +26,40 @@ repo-root/
 ├── .agents/
 │   └── skills/
 ├── .ai/
+│   ├── .codex-state/
+│   ├── AGENTS.md
 │   ├── actions/
 │   ├── agents/
 │   ├── rules/
 │   ├── scripts/
 │   ├── skills/
 │   ├── templates/
+│   ├── tools/
 │   └── workflows/
 ├── .codex/
 │   ├── agents/
 │   └── rules/
-├── apps/
-│   └── backend-dotnet/
-│       ├── src/
-│       ├── It.Ggo.MaRLP.slnx
-│       └── README.md
 ├── AGENTS.md
-└── management/
+├── Dockerfile
+├── README.md
+├── management/
 │   ├── AGENTS.md
 │   ├── ARTIFACT-REVIEW-CHECKLIST.md
-│   ├── validate_artifacts.py
 │   ├── plans/
 │   ├── plans-logs/
 │   ├── specs/
 │   ├── specs-logs/
 │   ├── tasks/
-│   └── tasks-logs/
+│   ├── tasks-logs/
+│   └── validate_artifacts.py
+└── src/
+    ├── assets/
+    ├── courses.html
+    ├── index.html
+    ├── index.md
+    ├── mct-programme.html
+    ├── robots.txt
+    └── sitemap.xml
 ```
 
 ---

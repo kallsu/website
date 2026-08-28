@@ -1,235 +1,206 @@
-# AGENT.md
+# Project AI Operating Instructions
 
-## Role
+This repository uses the `.ai` directory as the canonical source for AI-related project behavior.
 
-You are an HTML and CSS website generator for a freelancer website focused on visibility, SEO discovery, and professional positioning.
+Before starting any task, Codex must inspect and apply the relevant instructions, rules, workflows, skills, actions, and agent definitions stored under `.ai`.
 
-## Main Goal
+## Mandatory Startup Procedure
 
-Generate static website pages using only **HTML5** and **CSS3**.
+At the beginning of every session and before executing the first user request:
 
-The website must help the freelancer increase online visibility, present services clearly, and improve search engine discovery.
+1. Read this file completely.
+2. Inspect `.ai/rules/` and apply all rules relevant to the current task.
+3. Inspect `.ai/workflows/` and select the workflow that best matches the current task.
+4. Inspect `.ai/actions/` and identify any reusable action that should be used.
+5. Inspect `.ai/skills/` and load the skill instructions relevant to the current task.
+6. Inspect `.ai/agents/` and use the appropriate custom agent definition when the task requires specialized reasoning.
+7. If multiple instructions conflict, apply the precedence rules defined below.
+8. Do not begin implementation until the applicable rules and workflow have been identified.
 
-## Website structure
+## Instruction Precedence
 
-```markdown
-.
-└── website/
-    ├── index.html
-    ├── index.md
-    ├── robots.txt
-    ├── sitemap.xml
-    └── assets/
-        ├── styles/
-        │   └── main-03.css
-        ├── favicon/
-        │   ├── android-chrome-192x192.png
-        │   ├── android-chrome-512x512.png
-        │   ├── apple-touch-icon.png
-        │   ├── favicon-16x16.png
-        │   ├── favicon-32x32.png
-        │   ├── favicon.ico
-        │   └── site.webmanifest
-        └── images/
-            └── hero_image_01.jpg
+When instructions conflict, use the following order of priority:
+
+1. System and platform instructions.
+2. User instructions from the current conversation.
+3. Repository-level instructions in `AGENTS.md`.
+4. Rules in `.ai/rules/`.
+5. Workflow instructions in `.ai/workflows/`.
+6. Skill-specific instructions in `.ai/skills/`.
+7. Action-specific instructions in `.ai/actions/`.
+8. General project conventions and inferred patterns.
+
+Never ignore a higher-priority instruction because of a lower-priority file.
+
+## Repository AI Layout
+
+The current `.ai` layout is:
+
+```text
+.ai/
+├── .codex-state/
+├── AGENTS.md
+├── actions/
+├── agents/
+├── rules/
+├── scripts/
+├── skills/
+├── templates/
+├── tools/
+└── workflows/
 ```
 
-Where:
- - `assets` contains all the static assets, such as `images`, `favicon` and `style`.
- - `index.html` and `index.md` is on the root
+### `.ai/rules/`
 
-## Development Rules
+Contains project rules, coding standards, architectural constraints, security requirements, naming conventions, review criteria, and other mandatory instructions.
 
-Follow the Spec-Driven Development (SDD).
+Codex must treat these files as persistent project policy.
 
- - All the spec-files are inside the folder [specs](./specs)
- - Read the spec file and elaborate the plan.
- - Write the plan inside the [spec-log.md](./specs/spec-log.md) file. 
- - Create it on the 1st time.
- - Print the plan on screen and wait for the user approval, rejection or change(s). 
-   - In case of user's change review the consistency of the entire plan. If plan is correct, then execute it.
-   - If the plan is inconsistent then end the execution with the error message "Plan inconsistent. Execution terminated" both printing it on the screen.
- - Review all the file generated or modified to be compliance with the rules below.
+### `.ai/workflows/`
 
-### Spec file template
+Contains step-by-step workflows for recurring work. The active repository workflows are:
 
-The spec file MUST have the following template written in markdown syntax.
+- `content_chain_workflow.md`
+- `task_workflow.md`
+- `spec_workflow.md`
+- `plan_workflow.md`
 
-```markdown
-# Feature: (Name of the feature)
+Codex must select the most relevant workflow before planning the task.
 
-## Requirements
+### `.ai/actions/`
 
-(Here the requirements)
+Contains reusable operational actions, command recipes, checklists, or procedures.
 
-## Business Rules
+The current repository action is `/sdd-pipeline`, defined in `.ai/actions/sdd-pipeline.md`.
 
-(Here the business rules to follow)
+### `.ai/skills/`
 
-## Acceptance Criteria
+Contains project-specific skills.
 
-(Here the acceptance criteria)
+When a skill appears relevant, Codex must read its `SKILL.md` before using it.
 
+Expected structure:
+
+```text
+.ai/skills/<skill-name>/SKILL.md
 ```
 
-Example:
+### `.ai/agents/`
 
-```markdown
+Contains project custom-agent source definitions.
 
-# Feature: Customer Domain Creation
+Each `*.toml` file under `.ai/agents/` defines one custom agent and must use the OpenAI custom-agent schema:
 
-## Requirements
-- A customer must have a name, a customer identifier, date of birth, a document (either CPF or CNPJ), and a full address
-- The address must include street, number, an optional complement field, neighborhood, city, and state
-- The customer must be created using the factory pattern
-
-## Business Rules
-- CPF and CNPJ must follow Brazilian validation rules
-
-## Acceptance Criteria
-- Parameters must be final
-- Unit tests must be created for customer creation and field validation
+```toml
+name = "agent-name"
+description = "Human-facing guidance for when to use this agent."
+developer_instructions = """
+Core behavior instructions for the agent.
+"""
 ```
 
-## Technology Rules
+The `name` field is the source of truth for the custom agent identity. Keep filenames aligned with the agent name unless there is a documented reason not to.
 
-- Use only HTML5.
-- Use only CSS3.
-- Do not use JavaScript.
-- JavaScript is allowed only for:
-  - Google Analytics snippet
-  - Facebook Pixel snippet
-- Do not use frontend frameworks.
-- Do not use backend code.
-- Do not use build tools.
-- Do not use inline JavaScript.
-- Keep the website static and lightweight.
+### `.ai/templates/`
 
-## SEO Rules
+Contains canonical templates used by repository workflows, including TASK, SPEC, and PLAN templates.
 
-Every page must be optimized for SEO discovery.
+### `.ai/scripts/`
 
-Each HTML page must include:
+Contains repository automation scripts used to bootstrap, validate, or synchronize AI artifacts.
 
-- Unique `<title>`
-- Unique `<meta name="description">`
-- Semantic heading structure
-- One single `<h1>` per page
-- Proper `<h2>` and `<h3>` hierarchy
-- Descriptive URLs and filenames
-- Internal links between relevant pages
-- Image `alt` attributes
-- Open Graph metadata
-- Canonical URL
-- Structured content using semantic HTML tags
+## Generated Runtime Mirrors
 
-Use keywords naturally.  
-Do not keyword-stuff content.
+This repository materializes selected `.ai` content into Codex-compatible runtime locations:
 
-## Content Rules
-
-Content must be:
-
-- Clear
-- Professional
-- Trust-building
-- Focused on customer problems
-- Focused on freelancer services
-- Easy to scan
-- Written in simple business language
-
-Each page should include a clear call to action.
-
-Example calls to action:
-
-- Contact me
-- Book a consultation
-- View my services
-- Request a quote
-
-## Robots.txt Rules
-
-All public HTML pages must be included in `robots.txt`.
-
-Example:
-
-```txt
-User-agent: *
-Allow: /
-
-Content-Signal: ai-train=no, search=yes, ai-input=no
-
-Disallow: /assets/favicon/
-Disallow: /assets/styles/
-
-Sitemap: https://example.com/sitemap.xml
+```text
+.agents/
+.codex/
+AGENTS.md
 ```
 
-## HTML Structure Rules
+Current generated layout:
 
-Use semantic HTML5 elements:
+```text
+.agents/
+└── skills/
 
-```html
- <header>
- <nav>
- <main>
- <section>
- <article>
- <aside>
- <footer>
+.codex/
+├── agents/
+└── rules/
 ```
 
-All pages must have:
+The canonical source remains `.ai`.
 
- * Header
- * Navigation menu
- * Main content
- * Footer
- * Contact or conversion section
+Do not assume `.agents/`, `.codex/`, or root `AGENTS.md` are manually maintained unless project documentation explicitly says so.
 
-## CSS Rules
+When changing canonical files under `.ai`, keep generated runtime mirrors synchronized when the change is needed for the current Codex session to see the updated behavior. In particular, `.ai/agents/*.toml` should match the corresponding `.codex/agents/*.toml` runtime copy.
 
-CSS must be:
+## Management Workflow Layout
 
- * Clean
- * Reusable
- * Responsive
- * Mobile-first
- * Easy to maintain
+The controlled SDLC artifacts live under `management/`:
 
-Use a single shared stylesheet:
+```text
+management/
+├── AGENTS.md
+├── ARTIFACT-REVIEW-CHECKLIST.md
+├── plans/
+├── plans-logs/
+├── specs/
+├── specs-logs/
+├── tasks/
+├── tasks-logs/
+└── validate_artifacts.py
+```
 
-`/assets/styles/main-03.css`
+Repository workflow rules use this sequence:
 
-Avoid duplicated CSS across pages.
+```text
+TASK -> SPEC -> PLAN -> Implementation
+```
 
-## Accessibility Rules
+Use `.ai/rules/spec-driven-development.md`, `.ai/actions/sdd-pipeline.md`, and `management/AGENTS.md` when a request is part of the controlled SDLC artifact workflow.
 
-The website must be accessible.
+## Default Operating Workflow
 
-Include:
+For every task:
 
- * Descriptive link text
- * Proper color contrast
- * Keyboard-friendly navigation
- * `alt` text for images
- * Labels for form fields
- * Semantic HTML structure
+1. Understand the user request.
+2. Identify the relevant `.ai` rules, workflows, skills, actions, and agents.
+3. Produce a concise plan unless the task is trivial.
+4. Make the smallest safe change that satisfies the request.
+5. Preserve existing project conventions.
+6. Prefer editing existing files over creating unnecessary new files.
+7. Run relevant checks or explain why they were not run.
+8. Summarize what changed and mention any risks, assumptions, or follow-up work.
 
-## Output Rules
+## Safety and Quality Rules
 
-When generating code, provide:
+Codex must:
 
- * Complete file content
- * Correct filename
- * Clean folder structure
+- avoid destructive operations unless explicitly requested;
+- avoid deleting user work without confirmation;
+- avoid broad rewrites when a targeted edit is sufficient;
+- preserve formatting and style where possible;
+- keep changes scoped to the current task;
+- call out uncertainty instead of guessing;
+- prefer explicit project instructions over generic best practices;
+- avoid introducing new dependencies unless justified;
+- avoid exposing secrets, credentials, tokens, or private configuration.
 
-## Final Constraint
+## Missing Files
 
-Always prioritize:
+If a referenced `.ai` directory or file does not exist, Codex should continue gracefully and use the available instructions.
 
-- SEO visibility
-- Clear business positioning
-- Static HTML5 and CSS3 only
-- Fast loading pages
-- Maintainable structure
+Do not fail a task only because an optional `.ai` subdirectory is missing.
+
+## Final Response Expectations
+
+When completing a task, Codex should report:
+
+- what changed;
+- which checks were run;
+- any assumptions made;
+- any important limitations or next steps.
+
+Keep responses concise and practical.

@@ -1,0 +1,13 @@
+name = "spec-writer"
+description = "Use for converting approved TASK artifacts into user-story SPEC files."
+developer_instructions = """
+Use the spec-writer skill.
+
+Before writing a SPEC, read `.ai/skills/spec-writer/SKILL.md`, `.ai/workflows/spec_workflow.md`, `.ai/rules/spec-driven-development.md`, and `.ai/rules/output-taxonomy.md` completely.
+
+Convert only an approved TASK artifact into a SPEC. Preserve the TASK scope, constraints, assumptions, open questions, and traceability identifiers.
+
+Do not write a PLAN and do not start implementation.
+
+On success, write the SPEC and matching SPEC log in the canonical project locations required by the workflow.
+"""

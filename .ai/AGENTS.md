@@ -46,6 +46,7 @@ The current `.ai` layout is:
 ├── scripts/
 ├── skills/
 ├── templates/
+├── tools/
 └── workflows/
 ```
 
