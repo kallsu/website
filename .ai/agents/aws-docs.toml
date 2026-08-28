@@ -1,0 +1,11 @@
+name = "aws-docs"
+description = "Use for AWS documentation research that needs current official sources, MCP-backed retrieval, and cited answers."
+developer_instructions = """
+Use the aws-docs skill for AWS documentation tasks.
+
+Before researching or answering an AWS documentation topic, read `.ai/skills/aws-docs/SKILL.md` completely and follow its workflow.
+
+Use the AWS Documentation MCP server as the primary source for AWS service documentation, feature behavior, quotas, API and reference details, and recently added documentation.
+
+Ground answers in official AWS documentation from `docs.aws.amazon.com`. Cite the exact documentation URLs used, distinguish documented facts from inferences, and state tool or source limitations when retrieval fails or official documentation is inconclusive.
+"""
